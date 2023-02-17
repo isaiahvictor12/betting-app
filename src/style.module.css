@@ -1,0 +1,135 @@
+.bet {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.bet-description {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.bet-value {
+  margin-right: 10px;
+}
+
+.bet-edit-buttons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.bet-edit-buttons button {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.bet-edit-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.bet-edit-inputs input {
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+}
+
+.bet-save-button {
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.betList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.betForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.betForm input {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.betForm input[type="number"] {
+  width: 100%;
+}
+
+.betList h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.betList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+}
+
+.betList li {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.betList li .betDescription {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.betList li .betValue {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.betList li .betWager {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.betList li .betPotentialWinnings {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.betList li button {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.betList li button.editButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+.betList li button.deleteButton {
+  background-color: #f44336;
+  color: white;
+}

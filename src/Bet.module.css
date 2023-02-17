@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #144c83;
+  width: 150%;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.label {
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.input {
+  margin-right: 10px;
+}
+
+.row > span {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  color: #ccc;
+}
+
+.rowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.formRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.button {
+  border: none;
+  background-color: #4c4f52;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.formContainer button {
+  margin-top: 10px;
+}
+
+.formContainer button:first-child {
+  margin-right: 10px;
+}
