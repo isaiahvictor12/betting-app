@@ -1,3 +1,6 @@
+The easiest way to view the project is to go to https://master--glowing-melomakarona-cbf992.netlify.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
