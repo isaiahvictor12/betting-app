@@ -4,6 +4,7 @@ import styles from "../Bet.module.css";
 const Bet = ({ bet, onEdit, onDelete }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [betValues, setBetValues] = useState(bet);
+  const [selectedColor, setSelectedColor] = useState("blue");
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -15,8 +16,16 @@ const Bet = ({ bet, onEdit, onDelete }) => {
     setIsEditing(false);
   };
 
+  const handleColorChange = (event) => {
+    const color = event.target.value;
+    setSelectedColor(color);
+  };
+
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={{ backgroundColor: selectedColor }}
+    >
       {isEditing ? (
         <div className={styles.formContainer}>
           <div className={styles.formRow}>
@@ -29,16 +38,7 @@ const Bet = ({ bet, onEdit, onDelete }) => {
               className={styles.input}
             />
           </div>
-          <div className={styles.formRow}>
-            <label className={styles.label}>Needed Value:</label>
-            <input
-              type="text"
-              name="neededValue"
-              value={betValues.neededValue}
-              onChange={handleInputChange}
-              className={styles.input}
-            />
-          </div>
+
           <div className={styles.formRow}>
             <label className={styles.label}>Wagered Amount:</label>
             <input
@@ -58,6 +58,21 @@ const Bet = ({ bet, onEdit, onDelete }) => {
               onChange={handleInputChange}
               className={styles.input}
             />
+          </div>
+          <div className={styles.formRow}>
+            <label className={styles.label}>Background Color:</label>
+            <select
+              value={selectedColor}
+              onChange={handleColorChange}
+              className={styles.select}
+            >
+              <option value="red">Red</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+              <option value="pink">Pink</option>
+              <option value="purple">Purple</option>
+              <option value="#8B4513">Brown</option>
+            </select>
           </div>
           <button onClick={handleSave} className={styles.button}>
             Save

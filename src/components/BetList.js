@@ -73,15 +73,6 @@ const BetList = () => {
         />
       </div>
       <div>
-        <label>Needed Value:</label>
-        <input
-          type="text"
-          name="neededValue"
-          value={newBet.neededValue}
-          onChange={handleNewBetChange}
-        />
-      </div>
-      <div>
         <label>Wagered Amount:</label>
         <input
           type="text"
